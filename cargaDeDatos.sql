@@ -7,6 +7,33 @@ VALUES ('27359765510', 'AnaDiaz', '43052671');
 INSERT INTO Mozo (CUIL, nombreYApellido, telefono)
 VALUES ('2629765510', 'MariaVazquez', '43612121');
 
+INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, observacion, completa, numeroMozo)
+VALUES ('2018-11-29 10:30:00', 1, 5, 'Cuatro adultos y un menor', true, 1);
+
+INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
+VALUES ('2018-11-29 10:32:00', 2, 4, true, 1);
+
+INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
+VALUES ('2018-11-30 10:32:00', 1, 10, false, 1);
+
+INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
+VALUES ('2018-11-30 10:40:00', 2, 6, false, 3);
+
+INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
+VALUES ('2018-11-30 10:30:00', 3, 20, false, 2);
+
+INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
+VALUES ('2018-11-30 10:35:00', 4, 5, false, 1);
+
+INSERT INTO Domicilio (numeroMozo, calle, ubicacion, localidad)
+VALUES (1, 'Paseo Colón 850', 'San Telmo', 'CABA');
+
+INSERT INTO Domicilio (numeroMozo, calle, ubicacion, localidad)
+VALUES (2, '12 de Octubre 3200', 'Quilmes', 'Buenos Aires');
+
+INSERT INTO Domicilio (numeroMozo, calle, ubicacion, localidad)
+VALUES (3, 'Arcos 2160', 'Belgrano', 'CABA');
+
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('desayuno light', '2018-11-29', '2018-12-31', 'desayuno');
 
@@ -30,24 +57,6 @@ VALUES ('cena light', '2018-12-02', '2019-02-22', 'cena');
 
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('cena americana', '2018-11-01', '2019-02-25', 'cena');
-
-INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, observacion, completa, numeroMozo)
-VALUES ('2018-11-29 10:30:00', 1, 5, 'Cuatro adultos y un menor', true, 1);
-
-INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
-VALUES ('2018-11-29 10:32:00', 2, 4, true, 1);
-
-INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
-VALUES ('2018-11-30 10:32:00', 1, 10, false, 1);
-
-INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
-VALUES ('2018-11-30 10:40:00', 2, 6, false, 3);
-
-INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
-VALUES ('2018-11-30 10:30:00', 3, 20, false, 2);
-
-INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
-VALUES ('2018-11-30 10:35:00', 4, 5, false, 1);
 
 INSERT INTO Bodega (nombre) 
 VALUES ('Alamos');
