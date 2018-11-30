@@ -48,3 +48,18 @@ VALUES ('2018-11-30 10:30:00', 3, 20, false, 2);
 
 INSERT INTO Comanda (fechaYHoraInicioServicio, mesa, numeroDeComensales, completa, numeroMozo)
 VALUES ('2018-11-30 10:35:00', 4, 5, false, 1);
+
+INSERT INTO Bodega (nombre) 
+VALUES ('Alamos');
+
+INSERT INTO Bodega (nombre) 
+VALUES ('Trapiche');
+
+INSERT INTO Bodega (nombre) 
+VALUES ('Norton');
+
+INSERT INTO Bodega (nombre) 
+VALUES ('Kirkland');
+
+INSERT INTO Bodega (nombre) 
+VALUES ('Fuzion');
