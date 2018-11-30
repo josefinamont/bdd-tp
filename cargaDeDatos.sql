@@ -63,3 +63,21 @@ VALUES ('Kirkland');
 
 INSERT INTO Bodega (nombre) 
 VALUES ('Fuzion');
+
+INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
+VALUES ('De Moño Rojo', 'Merlot', 'rojo', 'Alamos');
+
+INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
+VALUES ('Almaviva Puente Alto', 'Cabernet Sauvignon', 'blanco', 'Trapiche');
+
+INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
+VALUES ('Seña Valle De Aconcagua', 'Monastrell', 'rosado', 'Norton');
+
+INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
+VALUES ('San Felipe 12 Uvas', 'Merlot', 'blanco', 'Kirkland');
+
+INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
+VALUES ('Teho Malbec Tomal Vineyard', 'Syrah', 'rojo', 'Fuzion');
+
+INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
+VALUES ('Altos Las Hormigas', 'Mencía', 'rosado', 'Alamos');
