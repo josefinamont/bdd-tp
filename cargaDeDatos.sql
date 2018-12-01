@@ -90,3 +90,21 @@ VALUES ('Teho Malbec Tomal Vineyard', 'Syrah', 'rojo', 'Fuzion');
 
 INSERT INTO ItemVino (nombre, variedadDeUva, colorOFermentacion, nombreBodega)
 VALUES ('Altos Las Hormigas', 'Mencía', 'rosado', 'Alamos');
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(1, 750, 200.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(2, 1000, 250.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(3, 750, 100.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(4, 1000, 150.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(5, 750, 350.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(6, 1000, 400.00);
