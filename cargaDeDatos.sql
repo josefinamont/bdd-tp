@@ -336,3 +336,21 @@ VALUES(5, 750, 350.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(6, 1000, 400.00);
+    
+INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
+VALUES(111, 'A', 650.00, '2018-11-29 12:30:00', 10, '2018-11-29 10:30:00', 1);
+
+INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
+VALUES(112, 'B', 300.00, '2018-11-29 11:30:00', 11, '2018-11-29 10:32:00', 2);
+
+INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
+VALUES(113, 'A', 400.00, '2018-11-30 11:30:00', 12, '2018-11-30 10:32:00', 1);
+
+INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
+VALUES(114, 'A', 1000.00, '2018-11-30 11:40:00', 13, '2018-11-30 10:40:00', 2);
+
+INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
+VALUES(115, 'B', 200.00, '2018-11-30 11:00:00', 14, '2018-11-30 10:30:00', 3);
+
+INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
+VALUES(116, 'A', 550.00, '2018-11-30 11:05:00', 15, '2018-11-30 10:35:00', 4);
