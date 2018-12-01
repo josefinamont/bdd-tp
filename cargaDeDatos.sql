@@ -262,6 +262,210 @@ VALUES ('Pesto', 'Salsas');
 INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
 VALUES ('Carbonara', 'Salsas');
 
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (1, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (2, 150.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (3, 175.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (4, 150.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (5, 165.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (6, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (7, 180.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (8, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (9, 140.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (10, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (11, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (12, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (13, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (14, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (15, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (16, 150.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (16, 300.00, 4);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (17, 100.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (18, 130.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (18, 260.00, 4);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (19, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (20, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (21, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (22, 40.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (23, 35.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (24, 95.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (24, 130.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (25, 110.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (25, 180.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (26, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (26, 210.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (27, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (28, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (29, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (30, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (31, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (32, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (33, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (34, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (35, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (36, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (37, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (38, 120.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (39, 115.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (39, 200.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (40, 180.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (40, 300.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (41, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (41, 280.00, 2);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (42, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (43, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (44, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (45, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (46, 50.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (47, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (48, 170.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (49, 170.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (50, 175.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (51, 150.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (52, 170.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (53, 200.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (54, 200.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (55, 80.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (56, 80.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (57, 80.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (58, 80.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (59, 80.00, 1);
+
+INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
+VALUES (60, 80.00, 1);
+
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('desayuno light', '2018-11-29', '2018-12-31', 'desayuno');
 
@@ -323,16 +527,25 @@ INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(1, 750, 200.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(1, 1000, 250.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(2, 1000, 250.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(3, 750, 100.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(3, 1000, 150.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(4, 1000, 150.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(5, 750, 350.00);
+
+INSERT INTO Capacidad (idVino, tamaño, precio)
+VALUES(5, 1000, 400.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(6, 1000, 400.00);

@@ -48,7 +48,7 @@ CREATE TABLE PrecioItemCartaGeneral (
     precio float NOT NULL,
     tamaño int NOT NULL,
     FOREIGN KEY (idItem) REFERENCES ItemCartaGeneral(idItem),
-	PRIMARY KEY (idItem)
+	PRIMARY KEY (idItem, tamaño)
     );
     
 CREATE TABLE ItemPedidoCartaGeneral (
@@ -142,7 +142,7 @@ CREATE TABLE Capacidad (
     tamaño int NOT NULL,
     precio float NOT NULL,
     FOREIGN KEY (idVino) REFERENCES ItemVino(idVino),
-	PRIMARY KEY (idVino)
+	PRIMARY KEY (idVino, tamaño)
 );
 
 CREATE TABLE ItemPedidoVino (
