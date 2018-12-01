@@ -34,6 +34,54 @@ VALUES (2, '12 de Octubre 3200', 'Quilmes', 'Buenos Aires');
 INSERT INTO Domicilio (numeroMozo, calle, ubicacion, localidad)
 VALUES (3, 'Arcos 2160', 'Belgrano', 'CABA');
 
+INSERT INTO Categoria (nombre)
+VALUES ('Sugerencias');
+
+INSERT INTO Categoria (nombre)
+VALUES ('Menú light');
+
+INSERT INTO Categoria (nombre)
+VALUES ('Entradas');
+
+INSERT INTO Categoria (nombre)
+VALUES ('Ensaladas');
+
+INSERT INTO Categoria (nombre)
+VALUES ('Sandwiches');
+
+INSERT INTO Categoria (nombre)
+VALUES ('Pastas');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Platos', 'Sugerencias');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Postres', 'Sugerencias');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Creppes', 'Menú light');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Verduras', 'Menú light');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Compuesta', 'Ensaladas');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Especiales', 'Ensaladas');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Fríos', 'Sandwiches');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Calientes', 'Sandwiches');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Adicionales', 'Sandwiches');
+
+INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
+VALUES ('Salsas', 'Pastas');
+
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('desayuno light', '2018-11-29', '2018-12-31', 'desayuno');
 
