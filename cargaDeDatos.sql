@@ -466,6 +466,48 @@ VALUES (59, 80.00, 1);
 INSERT INTO PrecioItemCartaGeneral (idItem, precio, tamaño)
 VALUES (60, 80.00, 1);
 
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (17, '2018-11-29 10:30:00', 1, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (16, '2018-11-29 10:30:00', 1, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (27, '2018-11-29 10:30:00', 1, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (18, '2018-11-29 10:32:00', 2, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (41, '2018-11-29 10:32:00', 2, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (40, '2018-11-29 10:32:00', 2, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (47, '2018-11-30 10:30:00', 3, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (51, '2018-11-30 10:30:00', 3, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (53, '2018-11-30 10:30:00', 3, false);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (53, '2018-11-30 10:32:00', 1, false);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (54, '2018-11-30 10:32:00', 1, true);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (41, '2018-11-30 10:35:00', 4, false);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (40, '2018-11-30 10:40:00', 2, false);
+
+INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
+VALUES (39, '2018-11-30 10:40:00', 2, false);
+
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('desayuno light', '2018-11-29', '2018-12-31', 'desayuno');
 
