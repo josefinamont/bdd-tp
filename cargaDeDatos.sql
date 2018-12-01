@@ -82,6 +82,186 @@ VALUES ('Adicionales', 'Sandwiches');
 INSERT INTO Categoria (nombre, nombreCategoriaSuperior)
 VALUES ('Salsas', 'Pastas');
 
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Crepe de Algarroba', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Suprema Piri-Piri', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Bifecitos de bondiola', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Lenguado Normanda', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Bife de chorizo relleno', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Lomo black', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Ojo de bife Malbec', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Entrañas Grillé', 'Platos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Baileys Frozen', 'Postres');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Copa Finsur', 'Postres');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Light (frío)', 'Creppes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('De atún (frío)', 'Creppes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('De atún (frío)', 'Creppes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Verde (caliente)', 'Creppes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Oriental (caliente)', 'Creppes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Mejillones a la Provenzal o al Ajillo', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Gambas al Ajillo', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Rabas', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Mayonesa de ave', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Mayonesa de atún', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Tomate relleno', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Empanada de Carne, Pollo o Jamón y Queso', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Empanada de Verdura o Humita', 'Entradas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Hasta tres ingredientes', 'Compuesta');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Hasta cinco ingredientes', 'Compuesta');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Completa', 'Compuesta');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('César', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Del Chef', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Centenario', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Luli', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Popeye', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Emiliano', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Rúcula y Parmesano', 'Especiales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Jamón Crudo', 'Fríos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Jamón Cocido', 'Fríos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Salame', 'Fríos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Leverwust', 'Fríos');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Hamburguesa', 'Calientes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Pollo', 'Calientes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Lomo', 'Calientes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Milanesa', 'Calientes');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Queso', 'Adicionales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Tomate y Lechuga', 'Adicionales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Huevo Duro', 'Adicionales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Ajíes', 'Adicionales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Pickles', 'Adicionales');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Ñoquis', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Tallarines', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Spaguettis', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Ñoquis rellenos (blancos o verdes)', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Ravioles', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Sorrentinos', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Canelones', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Lasagna', 'Pastas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Crema de Jamón', 'Salsas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Crema de Jamón', 'Salsas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Parisién', 'Salsas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Cuatro Quesos', 'Salsas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Pesto', 'Salsas');
+
+INSERT INTO ItemCartaGeneral (nombre, nombreCategoria)
+VALUES ('Carbonara', 'Salsas');
+
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('desayuno light', '2018-11-29', '2018-12-31', 'desayuno');
 
