@@ -508,6 +508,48 @@ VALUES (40, '2018-11-30 10:40:00', 2, false);
 INSERT INTO ItemPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, servido)
 VALUES (39, '2018-11-30 10:40:00', 2, false);
 
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (17, '2018-11-29 10:30:00', 1, 100.00, 2, 1);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (16, '2018-11-29 10:30:00', 1, 150.00, 2, 1);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (27, '2018-11-29 10:30:00', 1, 150.00, 1, 1);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (18, '2018-11-29 10:32:00', 2, 130.00, 2, 1);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (41, '2018-11-29 10:32:00', 2, 150.00, 1, 1);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (40, '2018-11-29 10:32:00', 2, 180.00, 1, 1);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (47, '2018-11-30 10:30:00', 3, 150.00, 1, 10);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (51, '2018-11-30 10:30:00', 3, 150.00, 1, 5);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (53, '2018-11-30 10:30:00', 3, 200.00, 1, 5);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (53, '2018-11-30 10:32:00', 1, 200.00, 1, 5);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (54, '2018-11-30 10:32:00', 1, 200.00, 1, 5);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (41, '2018-11-30 10:35:00', 4, 280.00, 2, 3);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (40, '2018-11-30 10:40:00', 2, 300.00, 2, 2);
+
+INSERT INTO PrecioPedidoCartaGeneral (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (39, '2018-11-30 10:40:00', 2, 200.00, 2, 1);
+
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('desayuno light', '2018-11-29', '2018-12-31', 'desayuno');
 
