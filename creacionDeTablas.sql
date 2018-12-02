@@ -1,3 +1,5 @@
+CREATE DATABASE restaurant;
+
 CREATE TABLE Mozo (
 	idMozo int NOT NULL AUTO_INCREMENT,
     CUIL bigint NOT NULL UNIQUE,
