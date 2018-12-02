@@ -649,8 +649,6 @@ VALUES (22, 'cena americana', '2018-11-01');
 INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
 VALUES (6, 'cena americana', '2018-11-01');
 
-SELECT * FROM ItemMenuPromocional;
-
 INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
 VALUES ('desayuno light', '2018-11-29', 2, 150.00);
 
