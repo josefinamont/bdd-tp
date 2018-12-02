@@ -1,5 +1,3 @@
-CREATE DATABASE restaurant;
-
 CREATE TABLE Mozo (
 	idMozo int NOT NULL AUTO_INCREMENT,
     CUIL bigint NOT NULL UNIQUE,
@@ -56,6 +54,7 @@ CREATE TABLE ItemPedidoCartaGeneral (
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
     servido boolean NOT NULL,
+    tipo varchar(2) DEFAULT 'CG', 
 	FOREIGN KEY (idItem) REFERENCES ItemCartaGeneral(idItem),
     FOREIGN KEY (fechaYHoraInicioServicio, mesa) REFERENCES Comanda (fechaYHoraInicioServicio, mesa),
     PRIMARY KEY (idItem, fechaYHoraInicioServicio, mesa)
@@ -104,6 +103,7 @@ CREATE TABLE ItemPedidoMenu (
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
     servido boolean NOT NULL,
+    tipo varchar(2) DEFAULT 'MP',
 	FOREIGN KEY (nombreItem, desde) REFERENCES MenuPromocional(nombre, desde),
     FOREIGN KEY (fechaYHoraInicioServicio, mesa) REFERENCES Comanda (fechaYHoraInicioServicio, mesa),
     PRIMARY KEY (nombreItem, desde, fechaYHoraInicioServicio, mesa)
