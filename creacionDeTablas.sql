@@ -56,6 +56,7 @@ CREATE TABLE ItemPedidoCartaGeneral (
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
     servido boolean NOT NULL,
+    tipo char NOT NULL,
 	FOREIGN KEY (idItem) REFERENCES ItemCartaGeneral(idItem),
     FOREIGN KEY (fechaYHoraInicioServicio, mesa) REFERENCES Comanda (fechaYHoraInicioServicio, mesa),
     PRIMARY KEY (idItem, fechaYHoraInicioServicio, mesa)
@@ -104,6 +105,7 @@ CREATE TABLE ItemPedidoMenu (
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
     servido boolean NOT NULL,
+    tipo char NOT NULL,
 	FOREIGN KEY (nombreItem, desde) REFERENCES MenuPromocional(nombre, desde),
     FOREIGN KEY (fechaYHoraInicioServicio, mesa) REFERENCES Comanda (fechaYHoraInicioServicio, mesa),
     PRIMARY KEY (nombreItem, desde, fechaYHoraInicioServicio, mesa)
