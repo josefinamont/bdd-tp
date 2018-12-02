@@ -5,6 +5,8 @@ SELECT mesa, nombre FROM ItemCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral WH
 SELECT mesa, nombreItem FROM ItemPedidoMenu WHERE servido = false ORDER BY mesa ASC;
 
 #Listado de todas las cosas pedidas por una mesa con los importes
+
+
 #Calcular el total (factura, agregacion) → no es obligatorio en este caso listar que opcion pidio
 
 # Tendencias de opciones de menus promocionales. De cada menu promocional, que cantidades de platos se han pedido hasta ahora
