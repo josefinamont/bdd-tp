@@ -5,4 +5,4 @@ SELECT mesa, nombre FROM ItemCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral WH
 SELECT mesa, nombreItem FROM ItemPedidoMenu WHERE servido = false ORDER BY mesa ASC;
 
 # Tendencias de opciones de menus promocionales. De cada menu promocional, que cantidades de platos se han pedido hasta ahora
-SELECT nombreItem, COUNT(*) as cantPlatos FROM ItemPedidoMenu GROUP BY nombreItem; 
+SELECT nombre, COUNT(*) as cantPlatos FROM ItemMenuPromocional NATURAL JOIN ItemCartaGeneral GROUP BY idItem; 
