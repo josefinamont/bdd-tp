@@ -14,6 +14,14 @@ SELECT fechaYHoraInicioServicio, mesa, nombreItem AS nombre, precio AS precioTot
 NATURAL JOIN ItemMenuPromocional NATURAL JOIN Pasos WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1;
 
 #Calcular el total (factura, agregacion) → no es obligatorio en este caso listar que opcion pidio
+SELECT fechaYHoraInicioServicio, mesa, SUM(precioTotal) AS precioFactura FROM (
+	SELECT fechaYHoraInicioServicio, mesa, nombre, cantidad*precio AS precioTotal FROM PrecioPedidoCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral 
+	NATURAL JOIN ItemCartaGeneral  NATURAL JOIN PrecioItemCartaGeneral WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1 UNION
+	SELECT fechaYHoraInicioServicio, mesa, nombre, cantidad*precio AS precioTotal FROM PrecioPedidoVino NATURAL JOIN ItemPedidoVino NATURAL JOIN ItemVino
+	NATURAL JOIN Capacidad WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1 UNION
+	SELECT fechaYHoraInicioServicio, mesa, nombreItem AS nombre, precio AS precioTotal FROM PrecioPedidoMenu NATURAL JOIN ItemPedidoMenu 
+	NATURAL JOIN ItemMenuPromocional NATURAL JOIN Pasos WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1) 
+    AS PreciosPorPedido GROUP BY mesa, fechaYHoraInicioServicio;
 
 # Tendencias de opciones de menus promocionales. De cada menu promocional, que cantidades de platos se han pedido hasta ahora
 SELECT nombre, COUNT(*) as cantPlatos FROM ItemPedidoMenu NATURAL JOIN ItemMenuPromocional NATURAL JOIN ItemCartaGeneral GROUP BY idItem;
