@@ -10,7 +10,7 @@ SELECT mesa, nombreItem FROM ItemPedidoMenu WHERE servido = false ORDER BY mesa 
 #Calcular el total (factura, agregacion) → no es obligatorio en este caso listar que opcion pidio
 
 # Tendencias de opciones de menus promocionales. De cada menu promocional, que cantidades de platos se han pedido hasta ahora
-SELECT nombre, COUNT(*) as cantPlatos FROM ItemMenuPromocional NATURAL JOIN ItemCartaGeneral GROUP BY idItem; 
+SELECT nombre, COUNT(*) as cantPlatos FROM ItemPedidoMenu NATURAL JOIN ItemMenuPromocional NATURAL JOIN ItemCartaGeneral GROUP BY idItem; 
 
 # Idem pero con las opciones de carta
 SELECT nombre, COUNT(*) as cantPlatos FROM ItemPedidoCartaGeneral NATURAL JOIN ItemCartaGeneral GROUP BY nombre;
