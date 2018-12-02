@@ -699,7 +699,43 @@ VALUES(5, 1000, 400.00);
 
 INSERT INTO Capacidad (idVino, tamaño, precio)
 VALUES(6, 1000, 400.00);
-    
+
+INSERT INTO ItemPedidoVino (idVino, fechaYHoraInicioServicio, mesa, servido)
+VALUES (3, '2018-11-29 10:30:00', 1, true);
+
+INSERT INTO ItemPedidoVino (idVino, fechaYHoraInicioServicio, mesa, servido)
+VALUES (4, '2018-11-29 10:32:00', 2, true);
+
+INSERT INTO ItemPedidoVino (idVino, fechaYHoraInicioServicio, mesa, servido)
+VALUES (5, '2018-11-29 10:32:00', 2, true);
+
+INSERT INTO ItemPedidoVino (idVino, fechaYHoraInicioServicio, mesa, servido)
+VALUES (1, '2018-11-30 10:32:00', 1, true);
+
+INSERT INTO ItemPedidoVino (idVino, fechaYHoraInicioServicio, mesa, servido)
+VALUES (6, '2018-11-30 10:32:00', 1, true);
+
+INSERT INTO ItemPedidoVino (idVino, fechaYHoraInicioServicio, mesa, servido)
+VALUES (3, '2018-11-30 10:35:00', 4, false);
+
+INSERT INTO PrecioPedidoVino (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (3, '2018-11-29 10:30:00', 1, 100.00, 750, 4);
+
+INSERT INTO PrecioPedidoVino (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (4, '2018-11-29 10:32:00', 2, 150.00, 1000, 2);
+
+INSERT INTO PrecioPedidoVino (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (5, '2018-11-29 10:32:00', 2, 350.00, 750, 2);
+
+INSERT INTO PrecioPedidoVino (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (1, '2018-11-30 10:32:00', 1, 200.00, 750, 4);
+
+INSERT INTO PrecioPedidoVino (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (6, '2018-11-30 10:32:00', 1, 400.00, 1000, 3);
+
+INSERT INTO PrecioPedidoVino (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES (3, '2018-11-30 10:35:00', 4, 150.00, 1000, 2);
+
 INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
 VALUES(111, 'A', 650.00, '2018-11-29 12:30:00', 10, '2018-11-29 10:30:00', 1);
 
