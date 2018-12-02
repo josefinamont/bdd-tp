@@ -201,3 +201,12 @@ CREATE TABLE Tarjeta (
     FOREIGN KEY (numeroFactura, tipoFactura) REFERENCES Factura (numero, tipo),
     PRIMARY KEY (numeroTarjeta)
     );
+    
+CREATE TABLE ItemMenuPromocional (
+	idItem int NOT NULL,
+    nombreMenuPromocional varChar(255) NOT NULL,
+	desde date NOT NULL,
+	FOREIGN KEY (idItem) REFERENCES ItemCartaGeneral (idItem),
+    FOREIGN KEY (nombreMenuPromocional, desde) REFERENCES MenuPromocional (nombre, desde),
+    PRIMARY KEY (idItem, nombreMenuPromocional, desde)
+    );
