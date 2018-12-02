@@ -1,8 +1,8 @@
 #Listado en pantalla de la cocina para ver pedidos pendientes
 #Tienen que salir distinguidos los pedidos que sean de menu a la carta y los que son de menu promocional
 #Pedidos pendientes ordenados por el número de mesa
-SELECT mesa, nombre, tipo FROM ItemCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral WHERE servido = false ORDER BY mesa ASC;
-
+SELECT mesa, nombre, tipo FROM ItemCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral WHERE servido = false 
+UNION
 SELECT mesa, nombre, tipo FROM ItemPedidoMenu NATURAL JOIN ItemMenuPromocional NATURAL JOIN ItemCartaGeneral WHERE servido = false ORDER BY mesa ASC;
 
 #Listado de todas las cosas pedidas por una mesa con los importes
