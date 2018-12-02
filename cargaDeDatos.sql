@@ -628,6 +628,18 @@ VALUES ('cena americana', '2018-11-01', 2, 180.00);
 INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
 VALUES ('cena americana', '2018-11-01', 3, 230.00);
 
+INSERT INTO ItemPedidoMenu (nombreItem, desde, fechaYHoraInicioServicio, mesa, servido)
+VALUES ('merienda americana', '2018-11-22', '2018-11-29 10:30:00', 1, true);
+
+INSERT INTO ItemPedidoMenu (nombreItem, desde, fechaYHoraInicioServicio, mesa, servido)
+VALUES ('cena americana', '2018-11-01', '2018-11-30 10:32:00', 1, false);
+
+INSERT INTO PrecioPedidoMenu (nombreItem, desde, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES ('merienda americana', '2018-11-22', '2018-11-29 10:30:00', 1, 170.00, 2, 2);
+
+INSERT INTO PrecioPedidoMenu (nombreItem, desde, fechaYHoraInicioServicio, mesa, precio, tamaño, cantidad)
+VALUES ('cena americana', '2018-11-01', '2018-11-30 10:32:00', 1, 230.00, 3, 2);
+
 INSERT INTO Bodega (nombre) 
 VALUES ('Alamos');
 
