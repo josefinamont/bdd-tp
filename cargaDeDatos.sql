@@ -598,6 +598,59 @@ VALUES ('cena light', '2018-12-02', 'JU');
 INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
 VALUES ('cena americana', '2018-11-01', 'VI');
 
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (35, 'desayuno light', '2018-11-29');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (34, 'desayuno light', '2018-11-29');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (36, 'desayuno americano', '2018-11-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (35, 'desayuno americano', '2018-11-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (37, 'desayuno americano', '2018-11-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (21, 'almuerzo light', '2018-10-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (9, 'almuerzo light', '2018-10-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (18, 'almuerzo americano', '2018-12-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (40, 'almuerzo americano', '2018-12-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (37, 'merienda light', '2018-11-25');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (12, 'merienda light', '2018-11-25');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (14, 'merienda americana', '2018-11-22');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (10, 'merienda americana', '2018-11-22');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (21, 'cena light', '2018-12-02');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (1, 'cena light', '2018-12-02');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (22, 'cena americana', '2018-11-01');
+
+INSERT INTO ItemMenuPromocional (idItem, nombreMenuPromocional, desde)
+VALUES (6, 'cena americana', '2018-11-01');
+
+SELECT * FROM ItemMenuPromocional;
+
 INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
 VALUES ('desayuno light', '2018-11-29', 2, 150.00);
 
@@ -606,9 +659,6 @@ VALUES ('desayuno americano', '2018-11-01', 3, 200.00);
 
 INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
 VALUES ('almuerzo light', '2018-10-01', 2, 230.00);
-
-INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
-VALUES ('almuerzo light', '2018-10-01', 3, 250.00);
 
 INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
 VALUES ('almuerzo americano', '2018-12-01', 2, 180.00);
@@ -624,9 +674,6 @@ VALUES ('cena light', '2018-12-02', 2, 160.00);
 
 INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
 VALUES ('cena americana', '2018-11-01', 2, 180.00);
-
-INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
-VALUES ('cena americana', '2018-11-01', 3, 230.00);
 
 INSERT INTO ItemPedidoMenu (nombreItem, desde, fechaYHoraInicioServicio, mesa, servido)
 VALUES ('merienda americana', '2018-11-22', '2018-11-29 10:30:00', 1, true);
