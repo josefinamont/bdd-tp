@@ -1,0 +1,2 @@
+# Tendencias de opciones de menus promocionales. De cada menu promocional, que cantidades de platos se han pedido hasta ahora
+SELECT nombreItem, COUNT(*) as cantPlatos FROM ItemPedidoMenu GROUP BY nombreItem; 
