@@ -574,6 +574,60 @@ VALUES ('cena light', '2018-12-02', '2019-02-22', 'cena');
 INSERT INTO MenuPromocional (nombre, desde, hasta, tipo)
 VALUES ('cena americana', '2018-11-01', '2019-02-25', 'cena');
 
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('desayuno light', '2018-11-29', 'LU');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('desayuno americano', '2018-11-01', 'MA');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('almuerzo light', '2018-10-01', 'MA');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('almuerzo americano', '2018-12-01', 'SA');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('merienda light', '2018-11-25', 'DO');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('merienda americana', '2018-11-22', 'SA');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('cena light', '2018-12-02', 'JU');
+
+INSERT INTO DiasHabilitados (nombreMenu, desde, diasHabilitados)
+VALUES ('cena americana', '2018-11-01', 'VI');
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('desayuno light', '2018-11-29', 2, 150.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('desayuno americano', '2018-11-01', 3, 200.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('almuerzo light', '2018-10-01', 2, 230.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('almuerzo light', '2018-10-01', 3, 250.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('almuerzo americano', '2018-12-01', 2, 180.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('merienda light', '2018-11-25', 2, 160.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('merienda americana', '2018-11-22', 2, 170.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('cena light', '2018-12-02', 2, 160.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('cena americana', '2018-11-01', 2, 180.00);
+
+INSERT INTO Pasos (nombreMenu, desde, cantidadDePasos, precio)
+VALUES ('cena americana', '2018-11-01', 3, 230.00);
+
 INSERT INTO Bodega (nombre) 
 VALUES ('Alamos');
 

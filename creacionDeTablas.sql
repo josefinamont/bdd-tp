@@ -95,7 +95,7 @@ CREATE TABLE Pasos (
     cantidadDePasos int NOT NULL,
     precio float NOT NULL,
     FOREIGN KEY (nombreMenu, desde) REFERENCES MenuPromocional(nombre, desde),
-	PRIMARY KEY (nombreMenu, desde)
+	PRIMARY KEY (nombreMenu, desde, cantidadDePasos)
     );
     
 CREATE TABLE ItemPedidoMenu (
