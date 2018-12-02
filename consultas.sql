@@ -12,12 +12,6 @@ NATURAL JOIN Capacidad WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AN
 SELECT fechaYHoraInicioServicio, mesa, nombreItem AS nombre, precio AS precioTotal FROM PrecioPedidoMenu NATURAL JOIN ItemPedidoMenu 
 NATURAL JOIN ItemMenuPromocional NATURAL JOIN Pasos WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1;
 
-#WHERE mesa = 3 AND fechaYHoraInicioServicio = '2018-11-30 10:30:00'
-
-SELECT mesa, nombre, precio FROM ItemPedidoCartaGeneral NATURAL JOIN ItemCartaGeneral NATURAL JOIN PrecioItemCartaGeneral;
-SELECT mesa, nombre, precio FROM ItemPedidoVino NATURAL JOIN ItemVino NATURAL JOIN Capacidad;
-SELECT mesa, nombre, precio FROM ItemPedidoMenu NATURAL JOIN ItemMenuPromocional NATURAL JOIN ItemCartaGeneral NATURAL JOIN PrecioItemCartaGeneral;
-
 #Calcular el total (factura, agregacion) → no es obligatorio en este caso listar que opcion pidio
 
 # Tendencias de opciones de menus promocionales. De cada menu promocional, que cantidades de platos se han pedido hasta ahora
