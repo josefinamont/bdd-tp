@@ -651,3 +651,39 @@ VALUES(115, 'B', 200.00, '2018-11-30 11:00:00', 14, '2018-11-30 10:30:00', 3);
 
 INSERT INTO Factura (numero, tipo, importeTotal, fechaYHora, numeroComprobante, fechaYHoraInicioServicio, mesa)
 VALUES(116, 'A', 550.00, '2018-11-30 11:05:00', 15, '2018-11-30 10:35:00', 4);
+    
+INSERT INTO Pago (numeroFactura, tipoFactura) 
+VALUES(111, 'A');
+
+INSERT INTO Pago (numeroFactura, tipoFactura) 
+VALUES(112, 'B');
+
+INSERT INTO Pago (numeroFactura, tipoFactura) 
+VALUES(113, 'A');
+
+INSERT INTO Pago (numeroFactura, tipoFactura) 
+VALUES(114, 'A');
+
+INSERT INTO Pago (numeroFactura, tipoFactura) 
+VALUES(115, 'B');
+
+INSERT INTO Pago (numeroFactura, tipoFactura) 
+VALUES(116, 'A');
+
+INSERT INTO Tarjeta (numeroTarjeta, numeroFactura, tipoFactura, tipo, nombre, bancoEmisor, codigoSeguridad, codigoAutorizacion, numeroCupon)
+VALUES(123456789123, 111, 'A', 'credito', 'Pedro Montes de Oca', 'Santander Rio', 600, '123', 1);
+
+INSERT INTO Tarjeta (numeroTarjeta, numeroFactura, tipoFactura, tipo, nombre, bancoEmisor, codigoSeguridad, codigoAutorizacion, numeroCupon)
+VALUES(123456789125, 112, 'B', 'debito', 'Maria Suarez', 'ICBC', 600, '123', 1);
+
+INSERT INTO Tarjeta (numeroTarjeta, numeroFactura, tipoFactura, tipo, nombre, bancoEmisor, codigoSeguridad, codigoAutorizacion, numeroCupon)
+VALUES(123456789124, 113, 'A', 'credito', 'Brenda Juarez', 'Credicoop', 600, '123', 1);
+
+INSERT INTO Tarjeta (numeroTarjeta, numeroFactura, tipoFactura, tipo, nombre, bancoEmisor, codigoSeguridad, codigoAutorizacion, numeroCupon)
+VALUES(123456789133, 114, 'A', 'credito', 'Sofia Avellaneda', 'Santander Rio', 600, '123', 1);
+
+INSERT INTO Tarjeta (numeroTarjeta, numeroFactura, tipoFactura, tipo, nombre, bancoEmisor, codigoSeguridad, codigoAutorizacion, numeroCupon)
+VALUES(123456789147, 115, 'B', 'debito', 'Carlos Mesa', 'BBVA Frances', 600, '123', 1);
+
+INSERT INTO Tarjeta (numeroTarjeta, numeroFactura, tipoFactura, tipo, nombre, bancoEmisor, codigoSeguridad, codigoAutorizacion, numeroCupon)
+VALUES(123456789199, 116, 'A', 'credito', 'Susana Gimenez', 'ICBC', 600, '123', 1);
