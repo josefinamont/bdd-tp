@@ -105,7 +105,6 @@ CREATE TABLE ItemPedidoMenu (
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
     servido boolean NOT NULL,
-    tipo varchar(2) DEFAULT 'MP',
 	FOREIGN KEY (nombreItem, desde) REFERENCES MenuPromocional(nombre, desde),
     FOREIGN KEY (fechaYHoraInicioServicio, mesa) REFERENCES Comanda (fechaYHoraInicioServicio, mesa),
     PRIMARY KEY (nombreItem, desde, fechaYHoraInicioServicio, mesa)
@@ -206,6 +205,7 @@ CREATE TABLE ItemMenuPromocional (
 	idItem int NOT NULL,
     nombreMenuPromocional varChar(255) NOT NULL,
 	desde date NOT NULL,
+    tipo varchar(2) DEFAULT 'MP',
 	FOREIGN KEY (idItem) REFERENCES ItemCartaGeneral (idItem),
     FOREIGN KEY (nombreMenuPromocional, desde) REFERENCES MenuPromocional (nombre, desde),
     PRIMARY KEY (idItem, nombreMenuPromocional, desde)
