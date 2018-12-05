@@ -1054,14 +1054,17 @@ VALUES(123456789199, 116, 'A', 'credito', 'Susana Gimenez', 'ICBC', 600, '123', 
 
 #Se crean las views
 
+#Ejemplo de invocacion: SELECT * FROM listarPedidosPendientes
 CREATE OR REPLACE VIEW listarPedidosPendientes AS
 SELECT mesa, nombre, tipo FROM ItemCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral WHERE servido = false 
 UNION
 SELECT mesa, nombre, tipo FROM ItemPedidoMenu NATURAL JOIN ItemMenuPromocional NATURAL JOIN ItemCartaGeneral WHERE servido = false ORDER BY mesa ASC;
 
+#Ejemplo de invocacion: SELECT * FROM tendenciasOpcionesCartaGeneral
 CREATE OR REPLACE VIEW tendenciasOpcionesCartaGeneral AS
 SELECT nombre, COUNT(*) as cantPlatos FROM ItemPedidoCartaGeneral NATURAL JOIN ItemCartaGeneral GROUP BY nombre;
 
+#Ejemplo de invocacion: SELECT * FROM tendenciasOpcionesMenuPromocional
 CREATE OR REPLACE VIEW tendenciasOpcionesMenuPromocional AS
 SELECT nombre, COUNT(*) as cantPlatos FROM ItemPedidoMenu NATURAL JOIN ItemMenuPromocional 
 NATURAL JOIN ItemCartaGeneral GROUP BY idItem;
