@@ -5,7 +5,7 @@ DELIMITER $$
 USE `restaurant`$$
 CREATE PROCEDURE `listarPedidosDeMesa`( numMesa INT, fechaYHora datetime )
 BEGIN  
- SELECT fechaYHoraInicioServicio, mesa, nombre, cantidad*precio AS precioTotal FROM PrecioPedidoCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral 
+ SELECT nombre, cantidad*precio AS precioTotal FROM PrecioPedidoCartaGeneral NATURAL JOIN ItemPedidoCartaGeneral 
  NATURAL JOIN ItemCartaGeneral  NATURAL JOIN PrecioItemCartaGeneral WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1 UNION
  SELECT fechaYHoraInicioServicio, mesa, nombre, cantidad*precio AS precioTotal FROM PrecioPedidoVino NATURAL JOIN ItemPedidoVino NATURAL JOIN ItemVino
  NATURAL JOIN Capacidad WHERE fechaYHoraInicioServicio = '2018-11-30 10:32:00' AND mesa = 1 UNION
