@@ -1,6 +1,6 @@
-CREATE DATABASE restaurant;
+CREATE DATABASE IF NOT EXISTS restaurant;
 
-CREATE TABLE Mozo (
+CREATE TABLE IF NOT EXISTS Mozo (
 	idMozo int NOT NULL AUTO_INCREMENT,
     CUIL bigint NOT NULL UNIQUE,
     nombreYApellido varchar(255) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE Mozo (
     PRIMARY KEY (idMozo)
     );
 
-CREATE TABLE Comanda (
+CREATE TABLE IF NOT EXISTS Comanda (
 	fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
 	numeroDeComensales int NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE Comanda (
     PRIMARY KEY (fechaYHoraInicioServicio, mesa)
     );
     
-CREATE TABLE Domicilio (
+CREATE TABLE IF NOT EXISTS Domicilio (
 	numeroMozo int NOT NULL,
     calle varchar(100) NOT NULL,
     ubicacion varchar(50) NOT NULL,
@@ -28,14 +28,14 @@ CREATE TABLE Domicilio (
 	PRIMARY KEY (numeroMozo)
     );
     
-CREATE TABLE Categoria (
+CREATE TABLE IF NOT EXISTS Categoria (
 	nombre varChar(255) NOT NULL,
 	nombreCategoriaSuperior varChar(255),
 	FOREIGN KEY (nombreCategoriaSuperior) REFERENCES Categoria(nombre),
 	PRIMARY KEY (nombre)
 );
     
-CREATE TABLE ItemCartaGeneral (
+CREATE TABLE IF NOT EXISTS ItemCartaGeneral (
 	idItem int NOT NULL AUTO_INCREMENT,
 	nombre varChar(255) NOT NULL,
     nombreCategoria varChar(255) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE ItemCartaGeneral (
 	PRIMARY KEY (idItem)
     );
     
-CREATE TABLE PrecioItemCartaGeneral (
+CREATE TABLE IF NOT EXISTS PrecioItemCartaGeneral (
 	idItem int NOT NULL,
     precio float NOT NULL,
     tamaño int NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE PrecioItemCartaGeneral (
 	PRIMARY KEY (idItem, tamaño)
     );
     
-CREATE TABLE ItemPedidoCartaGeneral (
+CREATE TABLE IF NOT EXISTS ItemPedidoCartaGeneral (
 	idItem int NOT NULL,
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
@@ -62,7 +62,7 @@ CREATE TABLE ItemPedidoCartaGeneral (
     PRIMARY KEY (idItem, fechaYHoraInicioServicio, mesa)
     );
     
-CREATE TABLE PrecioPedidoCartaGeneral (
+CREATE TABLE IF NOT EXISTS PrecioPedidoCartaGeneral (
 	idItem int NOT NULL,
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
@@ -74,7 +74,7 @@ CREATE TABLE PrecioPedidoCartaGeneral (
     PRIMARY KEY (idItem, fechaYHoraInicioServicio, mesa, precio, tamaño)
     );
     
-CREATE TABLE MenuPromocional (
+CREATE TABLE IF NOT EXISTS MenuPromocional (
 	nombre varchar(255) NOT NULL,
     desde date NOT NULL,
     hasta date NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE MenuPromocional (
     PRIMARY KEY (nombre, desde)
     );
     
-CREATE TABLE DiasHabilitados (
+CREATE TABLE IF NOT EXISTS DiasHabilitados (
 	nombreMenu varchar(255) NOT NULL,
     desde date NOT NULL,
     diasHabilitados set('LU', 'MA', 'MI', 'JU', 'VI', 'SA', 'DO'),
@@ -90,7 +90,7 @@ CREATE TABLE DiasHabilitados (
 	PRIMARY KEY (nombreMenu, desde, diasHabilitados)
     );
     
-CREATE TABLE Pasos (
+CREATE TABLE IF NOT EXISTS Pasos (
 	nombreMenu varchar(255) NOT NULL,
     desde date NOT NULL,
     cantidadDePasos int NOT NULL,
@@ -99,7 +99,7 @@ CREATE TABLE Pasos (
 	PRIMARY KEY (nombreMenu, desde, cantidadDePasos)
     );
     
-CREATE TABLE ItemPedidoMenu (
+CREATE TABLE IF NOT EXISTS ItemPedidoMenu (
 	nombreItem varChar(255) NOT NULL,
     desde date NOT NULL,
     fechaYHoraInicioServicio datetime NOT NULL,
@@ -110,7 +110,7 @@ CREATE TABLE ItemPedidoMenu (
     PRIMARY KEY (nombreItem, desde, fechaYHoraInicioServicio, mesa)
     );
     
-CREATE TABLE PrecioPedidoMenu (
+CREATE TABLE IF NOT EXISTS PrecioPedidoMenu (
 	nombreItem varChar(255) NOT NULL,
 	desde date NOT NULL,
     fechaYHoraInicioServicio datetime NOT NULL,
@@ -123,12 +123,12 @@ CREATE TABLE PrecioPedidoMenu (
     PRIMARY KEY (nombreItem, desde, fechaYHoraInicioServicio, mesa, precio, tamaño)
     );
    
-CREATE TABLE Bodega (
+CREATE TABLE IF NOT EXISTS Bodega (
 	nombre varchar(100) NOT NULL,
     PRIMARY KEY (nombre)
     );
    
-CREATE TABLE ItemVino (
+CREATE TABLE IF NOT EXISTS ItemVino (
 	idVino int NOT NULL AUTO_INCREMENT,
 	nombre varchar(50) NOT NULL,
     variedadDeUva varchar(50) NOT NULL,
@@ -138,7 +138,7 @@ CREATE TABLE ItemVino (
 	PRIMARY KEY (idVino)
 );
 
-CREATE TABLE Capacidad (
+CREATE TABLE IF NOT EXISTS Capacidad (
 	idVino int NOT NULL,
     tamaño int NOT NULL,
     precio float NOT NULL,
@@ -146,7 +146,7 @@ CREATE TABLE Capacidad (
 	PRIMARY KEY (idVino, tamaño)
 );
 
-CREATE TABLE ItemPedidoVino (
+CREATE TABLE IF NOT EXISTS ItemPedidoVino (
 	idVino int NOT NULL,
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
@@ -156,7 +156,7 @@ CREATE TABLE ItemPedidoVino (
     PRIMARY KEY (idVino, fechaYHoraInicioServicio, mesa)
 );
 
-CREATE TABLE PrecioPedidoVino (
+CREATE TABLE IF NOT EXISTS PrecioPedidoVino (
 	idVino int NOT NULL,
     fechaYHoraInicioServicio datetime NOT NULL,
     mesa int NOT NULL,
@@ -168,7 +168,7 @@ CREATE TABLE PrecioPedidoVino (
     PRIMARY KEY (idVino, fechaYHoraInicioServicio, mesa, precio, tamaño)
     );
 
-CREATE TABLE Factura (
+CREATE TABLE IF NOT EXISTS Factura (
 	numero int NOT NULL,
     tipo char NOT NULL,
     importeTotal float NOT NULL,
@@ -180,14 +180,14 @@ CREATE TABLE Factura (
     PRIMARY KEY (numero, tipo)
     );
     
-CREATE TABLE Pago (
+CREATE TABLE IF NOT EXISTS Pago (
 	numeroFactura int NOT NULL,
     tipoFactura char NOT NULL,
     FOREIGN KEY (numeroFactura, tipoFactura) REFERENCES Factura (numero, tipo),
     PRIMARY KEY (numeroFactura, tipoFactura)
     );
     
-CREATE TABLE Tarjeta (
+CREATE TABLE IF NOT EXISTS Tarjeta (
 	numeroTarjeta bigint NOT NULL,
     numeroFactura int NOT NULL,
     tipoFactura char NOT NULL,
@@ -201,7 +201,7 @@ CREATE TABLE Tarjeta (
     PRIMARY KEY (numeroTarjeta)
     );
     
-CREATE TABLE ItemMenuPromocional (
+CREATE TABLE IF NOT EXISTS ItemMenuPromocional (
 	idItem int NOT NULL,
     nombreMenuPromocional varChar(255) NOT NULL,
 	desde date NOT NULL,
