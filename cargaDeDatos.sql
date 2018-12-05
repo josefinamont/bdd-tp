@@ -1,3 +1,5 @@
+USE `restaurant`;
+
 INSERT INTO Mozo (CUIL, nombreYApellido, telefono)
 VALUES ('27379765510', 'JuanPerez', '43052241');
 

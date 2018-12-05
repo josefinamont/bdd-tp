@@ -1,5 +1,7 @@
 CREATE DATABASE IF NOT EXISTS restaurant;
 
+USE `restaurant`;
+
 CREATE TABLE IF NOT EXISTS Mozo (
 	idMozo int NOT NULL AUTO_INCREMENT,
     CUIL bigint NOT NULL UNIQUE,
